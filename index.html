@@ -105,8 +105,78 @@
       <div class="pole"></div>
     </div>
   </div>
+
+  <hr/>
+
+<div class="container my-5">
+  <h2 class="text-center mb-4">🧠 La Leggenda delle Torri di Hanoi</h2>
+
+  <p>
+    <img src="./Elucas_1.png" alt="Édouard Lucas, inventore delle Torri di Hanoi" class="rounded float-start"/>
+    Il rompicapo delle <strong>Torri di Hanoi</strong> fu inventato nel <strong>1883</strong> dal matematico francese 
+    <em>Édouard Lucas</em>. Secondo una leggenda, in un tempio indù sacro nella città di Benares (l’attuale 
+    Varanasi, in India), i monaci stanno cercando di spostare <strong>64 dischi d’oro</strong> da una torre all’altra, seguendo precise 
+    regole divine. Quando riusciranno a completare il compito, si racconta che il <strong>mondo finirà</strong>. 
+    
+    Anche la morte di Lucas, del resto: è avvolta dal mistero e dall'inusuale: pare che 
+    al banchetto annuale del congresso dell'<em>Association française pour l'avancement des sciences</em>, 
+    a cui stava partecipando, un cameriere fece cadere delle stoviglie e un piatto rotto gli provocò un taglio sul viso.  
+    Pochi giorni dopo, lo scienziato muore, a causa di gravi infiammazioni cutanee (probabile setticemìa).
+  </p>
+
+  <h4 class="mt-4"> Regole del Gioco</h4>
+  <ul>
+    <li>Ci sono <strong>3 torri</strong> (aste verticali).</li>
+    <li>I <strong>dischi</strong> (di diverse dimensioni) sono inizialmente impilati sulla prima torre, dal più grande in basso al più piccolo in alto.</li>
+    <li>Si può <strong>spostare un solo disco alla volta</strong>.</li>
+    <li>Un disco può essere collocato solo su una torre vuota o sopra un disco <strong>più grande</strong>.</li>
+    <li>Lo scopo è spostare l’intera pila sulla <strong>terza torre</strong>, rispettando le regole.</li>
+  </ul>
+
+  <h4 class="mt-4"> Aspetti tecnici</h4>
+  <p>
+    Il numero minimo di mosse è dato dalla formula:
+  </p>
+  <p class="text-center display-6"><code>2ⁿ - 1</code></p>
+  <p>
+    Dove <code>n</code> è il numero di dischi. Ad esempio:
+  </p>
+  <ul>
+    <li>Con 3 dischi: <strong>7 mosse</strong> (minimo necessario)</li>
+    <li>Con 4 dischi: <strong>15 mosse</strong></li>
+    <li>Con 5 dischi: <strong>31 mosse</strong></li>
+    <li> ... </li>
+  </ul>
+
+  <h4 class="mt-4">🎓 Significato e Applicazioni</h4>
+  <p>
+    Il gioco viene utilizzato in vari ambiti:
+  </p>
+  <ul>
+    <li>In <strong>informatica</strong> spiega la <strong>ricorsione</strong> e le strutture dati.</li>
+    <li>In <strong>psicologia</strong> si usa come test di <em>problem solving</em> e/o pianificazione cognitiva.</li>
+  </ul>
+
+  <p class="mt-4">
+    Le Torri di Hanoi non sono solo un passatempo: rappresentano un perfetto equilibrio tra logica, pazienza e astrazione matematica.
+  </p>
 </div>
 
+  
+  <hr/>
+  <div class="container my-4">
+  <h3 class="text-center">📺 Video: Come funzionano le Torri di Hanoi</h3>
+  <div class="ratio ratio-16x9">
+    <iframe src="https://www.youtube.com/embed/S9JGmA5_unY" 
+            title="Torri di Hanoi - animazione e spiegazione"
+            allowfullscreen></iframe>
+  </div>
+</div>
+
+</div>
+
+
+  
 <script>
   let towers, diskCount, minMoves, moveCounter;
 
@@ -190,5 +260,7 @@
   document.addEventListener("DOMContentLoaded", startGame);
 </script>
 
+
+  
 </body>
 </html>
